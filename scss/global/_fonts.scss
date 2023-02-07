@@ -1,0 +1,15 @@
+// font-family: 'NeueMachina-Regular',sans-serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Russo One', sans-serif;
+
+@font-face {
+  font-family: 'NeueMachina-Regular';
+  src: url('../fonts/neuemachina-regular.eot'); /* IE 9 Compatibility Mode */
+  src: url('../fonts/neuemachina-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('../fonts/neuemachina-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/neuemachina-regular.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */ url('../fonts/neuemachina-regular.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/neuemachina-regular.svg#neuemachina-regular')
+      format('svg'); /* Chrome < 4, Legacy iOS */
+}

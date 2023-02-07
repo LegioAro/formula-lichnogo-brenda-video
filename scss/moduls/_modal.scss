@@ -1,0 +1,131 @@
+.modal {
+  width: 100%;
+  max-width: 580px;
+  background: #ffffff;
+  box-shadow: 0px 2.97436px 74.359px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 42px 48px;
+  min-height: 660px;
+  position: relative;
+
+  &__wrapper {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(#000, 0.7);
+    backdrop-filter: blur(5.5px);
+    padding: 100px 15px;
+    overflow: auto;
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+
+    &.active {
+      display: flex;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 132px;
+    margin-top: -46px;
+    margin-bottom: 50px;
+    display: flex;
+  }
+
+  &__title {
+    font-family: var(--font-bold);
+    font-size: 29px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 7.5px;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 22.3081px;
+    line-height: 125%;
+    text-align: center;
+    margin-bottom: 52px;
+  }
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 460px;
+    margin: 0 auto 60px;
+  }
+
+  &__input {
+    background-color: #ffffff;
+    border: 0.74359px solid rgba(0, 0, 0, 0.1);
+    border-radius: 7.35px;
+    width: 100%;
+    padding: 21px 23px;
+    font-weight: 300;
+    font-size: 14.8718px;
+    line-height: 145%;
+    margin-bottom: 20px;
+    outline: none;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &::placeholder {
+      font-family: var(--font-text);
+      font-weight: 300;
+      font-size: 14.8718px;
+      line-height: 145%;
+    }
+    &:focus {
+      border: 0.74359px solid rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    max-width: 460px;
+  }
+
+  &__btn-close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 40px;
+    display: flex;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal {
+    max-width: 400px;
+    padding: 0 15px 30px;
+    min-height: 500px;
+    &__img {
+      max-width: 100px;
+      margin-bottom: 30px;
+      margin-top: -35px;
+    }
+    &__title {
+      font-size: 20px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+    &__inputs {
+      margin-bottom: 30px;
+    }
+    &__input {
+      padding: 14px;
+      margin-bottom: 15px;
+    }
+  }
+}

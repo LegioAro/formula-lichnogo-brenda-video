@@ -1,0 +1,139 @@
+.video {
+  margin-bottom: 133px;
+  &__wrapper {
+    width: 100%;
+    max-width: 1010px;
+    margin: 0 auto;
+  }
+
+  &__title-block {
+    text-align: center;
+    margin-bottom: 65px;
+  }
+
+  &__title-text {
+    font-weight: 300;
+    font-size: 20.9294px;
+    line-height: 125%;
+    margin-bottom: 5px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    font-family: var(--font-bold);
+    color: var(--color-select);
+    font-size: 50px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    margin: 0 auto 5px;
+    position: relative;
+    max-width: fit-content;
+  }
+
+  &__title-dec {
+    position: absolute;
+    width: 70px;
+    display: flex;
+    top: 50%;
+    transform: translateY(-50%);
+    &-1 {
+      left: -138px;
+    }
+    &-2 {
+      right: -138px;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 40px;
+    grid-row-gap: 50px;
+  }
+
+  &__item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item-img {
+    overflow: hidden;
+    border-radius: 7.35294px;
+    margin-bottom: 24px;
+    display: flex;
+  }
+
+  &__item-title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 145%;
+    margin-bottom: 8px;
+  }
+
+  &__item-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 155%;
+    margin-bottom: 11px;
+  }
+
+  &__item-btn {
+    width: 100%;
+    max-width: 248px;
+    margin: auto auto 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .video {
+    margin-bottom: 100px;
+    &__items {
+      grid-column-gap: 15px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .video {
+    &__items {
+      max-width: 400px;
+      grid-template-columns: repeat(1, 1fr);
+      margin: 0 auto;
+    }
+    &__title-dec {
+      &-1 {
+        left: -90px;
+      }
+      &-2 {
+        right: -90px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .video {
+    margin-bottom: 70px;
+
+    &__title-dec {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .video {
+    &__title-text {
+      font-size: 18px;
+    }
+    &__title {
+      font-size: 36px;
+    }
+  }
+}

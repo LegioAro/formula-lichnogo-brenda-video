@@ -1,0 +1,127 @@
+.description {
+  padding-top: 150px;
+  margin-bottom: 83px;
+  &__wrapper {
+    width: 100%;
+    max-width: 1008px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-family: var(--font-bold);
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -40px -18px;
+  }
+
+  &__item-wrapper {
+    width: 100%;
+    max-width: 33%;
+    padding: 40px 18px;
+  }
+
+  &__item {
+    box-shadow: 11.4043px 22.8085px 79.8298px rgba(0, 0, 0, 0.05);
+    border-radius: 9.67182px;
+    padding: 44px 40px 10px;
+    min-height: 210px;
+    position: relative;
+  }
+
+  &__item-num {
+    position: absolute;
+    top: -30px;
+    right: 17px;
+    font-family: var(--font-bold);
+    color: var(--color-select);
+    font-size: 50px;
+    line-height: 145%;
+    text-align: right;
+  }
+
+  &__item-title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 145%;
+    margin-bottom: 8px;
+  }
+
+  &__item-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 155%;
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 1050px) {
+  .description {
+    padding-top: 100px;
+    &__title {
+      font-size: 36px;
+    }
+    &__items {
+      margin: -20px -7.5px;
+    }
+    &__item-wrapper {
+      padding: 20px 7.5px;
+    }
+    &__item-num {
+      top: -10px;
+      font-size: 36px;
+    }
+    &__item-title {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .description {
+    &__item-wrapper {
+      max-width: 50%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .description {
+    margin-bottom: 70px;
+    padding-top: 70px;
+
+    &__title {
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .description {
+    &__title {
+      font-size: 24px;
+      margin-bottom: 50px;
+    }
+    &__items {
+      margin: 0;
+    }
+    &__item-wrapper {
+      max-width: 100%;
+      padding: 0;
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

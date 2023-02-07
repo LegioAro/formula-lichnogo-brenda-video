@@ -1,0 +1,14 @@
+body {
+  font-family: var(--font-text);
+  font-weight: 400;
+  color: #000000;
+  &.lock {
+    overflow: hidden;
+  }
+}
+.container {
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
